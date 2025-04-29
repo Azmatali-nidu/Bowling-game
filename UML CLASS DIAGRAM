@@ -1,0 +1,22 @@
++------------------+       1         *       +------------------+
+|     BowlingGame  |------------------------>|      Frame       |
++------------------+                         +------------------+
+| - frames: vector<Frame>                    | - rolls: vector<int>
+| - currentFrameIndex: int                   | - isTenthFrame: bool
++------------------+                         +------------------+
+| + roll(int): void                          | + addRoll(int): void
+| + score(): int                             | + getRoll(int): int
+|                                            | + getScore(): int
+|                                            | + isStrike(): bool
+|                                            | + isSpare(): bool
+|                                            | + isComplete(): bool
+|                                            | + getRolls(): const vector<int>&
++------------------+                         +------------------+
+
++--------------+
+|    Player    |
++--------------+
+| - name: string
++--------------+
+| + getName(): string
++--------------+
